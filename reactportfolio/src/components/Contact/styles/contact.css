@@ -1,0 +1,32 @@
+.contact {
+    color: purple;
+    background-color: rgb(208, 196, 252);
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.h2 {
+    color: #1f0133;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.submit{
+    padding: 15px 90px;
+    background-color: purple;
+    color:violet;
+    font-size: larger;
+}
+
+.submit:hover {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .submit:active {
+    transform: translateY(4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }

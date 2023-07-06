@@ -1,0 +1,13 @@
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-image {
+    max-width: 40%;
+  }
+
+  .p{
+    font-size: larger;
+  }
+  

@@ -1,0 +1,80 @@
+body {
+    color: #4e054e;
+    background-color: rgb(208, 196, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    line-height: 1.5;
+
+}
+
+.header {
+    background: linear-gradient(to right, #000027, navy, purple, violet, rgb(250, 224, 250));
+}
+
+.footer{
+    color:#4e054e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name{
+    color:antiquewhite;
+    font-size: 48px;
+    padding-left: 40%;
+}
+
+.list {
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:antiquewhite;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-list li {
+    margin-right: 5px;
+    margin-left: 20px;
+  }
+
+  .nav-list button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 93px;
+    background-color: #f0f0;
+  }
+
+  .nav-list button:hover {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-list button:active {
+    transform: translateY(4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+.app {
+    color: antiquewhite;
+    background-color: rgb(208, 196, 252);
+}
+
+.h2,
+h3,
+h4 {
+    color: #1f0133;
+    font-weight: bold;
+}
+
+.social-links a {
+    font-size: 40px; 
+    padding-inline: 120px;
+    padding-top: 40px;
+}
+
+
+  
