@@ -1,28 +1,30 @@
-const path = require('path');
-const nodemailer = require('nodemailer');
+app.post('/contact', function (req, res) {
+  const { name, email, message } = req.body;
 
-module.exports = function (app) {
-  // Serve the index.html file
-  app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-  });
-
-  // Handle the contact form submission
-  app.post('/contact', function (req, res) {
-    // Extract the form data from the request body
-    const { name, email, message } = req.body;
-
-   // Create a transporter using SMTP
-const transporter = nodemailer.createTransport({
-    host: 'your-smtp-host',
-    port: 'your-smtp-port',
-    secure: true, // Set to true if using a secure connection (TLS/SSL)
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: '995',
+    secure: true,
     auth: {
-      user: 'your-email',
-      pass: 'your-email-password',
+      user: 'sewstrait@gmail.com',
+      pass: 'GoldBirdWoman15!',
     },
   });
-    // Redirect or send a response indicating success
-    res.send('Form submitted successfully');
+
+  const mailOptions = {
+    from: 'sewstrait@gmail.com',
+    to: 'sewstrait@gmail.com',
+    subject: 'New Contact Form Submission',
+    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+  };
+
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log('Error submitting form:', error);
+      res.status(500).send('Error submitting form');
+    } else {
+      console.log('Form submitted successfully');
+      res.send('Form submitted successfully');
+    }
   });
-};
+});

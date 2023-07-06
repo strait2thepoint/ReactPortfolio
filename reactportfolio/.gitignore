@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 server/server.js
+server/routes/htmlRoutes.js
 
 
 # testing
