@@ -11,14 +11,6 @@
 - [License](#license)
 - [Contact](#contact)
 
-## Features
-
-[List of key features or functionalities of the project]
-
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-
 ## Installation
 
 [Instructions on how to install and set up the project]
